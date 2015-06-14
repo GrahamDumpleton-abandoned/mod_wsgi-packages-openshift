@@ -19,7 +19,7 @@ COPY buildout.cfg /mod_wsgi-packages/
 
 RUN buildout -v -v
 
-ENV TARBALL mod_wsgi-packages-openshift-centos6-apache-2.4.10-1.tar.gz
+ENV TARBALL mod_wsgi-packages-openshift-centos6-apache-2.4.12-1.tar.gz
 ENV S3_BUCKET_NAME modwsgi.org
 
 RUN tar cvfz $TARBALL apache apr-util apr
